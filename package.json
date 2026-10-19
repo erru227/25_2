@@ -1,7 +1,7 @@
 {
-    "name": "express-start-example",
+    "name": "express-second-example",
     "version": "1.0.0",
-    "description": "Used to showcase basic express functionality",
+    "description": "Used to showcase more express functionality",
     "scripts": {
         "start": "node server.js"
     },
