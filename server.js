@@ -11,8 +11,8 @@ app.get("/hello", function(req, res) {
 
 app.post("/goodbye", function(req, res) {
    res.send('
-      <link rel="stylesheet" href="/style.css">
-      <h1>Goodbye, Express!</h1>
+      <head><link rel="stylesheet" href="/style.css"></head>
+      <body><h1>Goodbye, Express!</h1></body>
    ');
 });
 
