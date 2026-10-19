@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const fs = require('fs');
 
 const web_files = express.static("public");
 
@@ -12,7 +11,7 @@ app.get("/hello", function(req, res) {
 
 app.post("/goodbye", function(req, res) {
    res.send(`
-      <link rel="stylesheet" href="public/style.css">
+      <link rel="stylesheet" href="/style.css">
       <h1>Goodbye, Express!</h1>
    `);
 });
