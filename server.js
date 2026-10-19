@@ -10,10 +10,7 @@ app.get("/hello", function(req, res) {
 });
 
 app.post("/goodbye", function(req, res) {
-   res.send("
-      <head><link rel=\"stylesheet\" href=\"/style.css\"></head>
-      <body><h1>Goodbye, Express!</h1></body>
-   ");
+   res.send('<head><link rel="stylesheet" href="/style.css"></head> <body><h1>Goodbye, Express!</h1></body>');
 });
 
 app.listen(3000, function() {
