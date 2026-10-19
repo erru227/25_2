@@ -10,10 +10,10 @@ app.get("/hello", function(req, res) {
 });
 
 app.post("/goodbye", function(req, res) {
-   res.send(`
+   res.send('
       <link rel="stylesheet" href="/style.css">
       <h1>Goodbye, Express!</h1>
-   `);
+   ');
 });
 
 app.listen(3000, function() {
