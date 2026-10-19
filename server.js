@@ -9,7 +9,6 @@ app.get("/hello", function(req, res) {
    res.send("<h1>Hello, Express!</h1>");
 });
 
-// Called for POST request to http://localhost:3000/goodbye
 app.post("/goodbye", function(req, res) {
    res.send("<h1>Goodbye, Express!</h1>");
 });
