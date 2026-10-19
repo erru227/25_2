@@ -1,9 +1,14 @@
 const express = require('express');
 const app = express();
 
-const web_files = express.static("public");
+app.get("/hello", function(req, res) {
+   res.send("<h1>Hello, Express!</h1>");
+});
 
-app.use(web_files);
+// Called for POST request to http://localhost:3000/goodbye
+app.post("/goodbye", function(req, res) {
+   res.send("<h1>Goodbye, Express!</h1>");
+});
 
 app.listen(3000, function() {
    console.log("Listening on port 3000...");
