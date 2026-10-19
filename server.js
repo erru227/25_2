@@ -13,6 +13,6 @@ app.post("/goodbye", function(req, res) {
    res.send('<head><link rel="stylesheet" href="/style.css"></head> <body><h1>Goodbye, Express!</h1></body>');
 });
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
    console.log("Listening on port 3000...");
 });
