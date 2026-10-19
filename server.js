@@ -11,9 +11,10 @@ app.get("/hello", function(req, res) {
 });
 
 app.post("/goodbye", function(req, res) {
-   res.send("<h1>Goodbye, Express!</h1>");
-   res.setHeader('Content-Type', 'text/css');
-   res.end(fs.readFileSync('public/style.css'));
+   res.send(`
+      <link rel="stylesheet" href="public/style.css">
+      <h1>Goodbye, Express!</h1>
+   `);
 });
 
 app.listen(3000, function() {
