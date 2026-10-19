@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const fs = require('fs');
 
 const web_files = express.static("public");
 
@@ -11,6 +12,8 @@ app.get("/hello", function(req, res) {
 
 app.post("/goodbye", function(req, res) {
    res.send("<h1>Goodbye, Express!</h1>");
+   res.setHeader('Content-Type', 'text/css');
+   res.end(fs.readFileSync('public/style.css'));
 });
 
 app.listen(3000, function() {
